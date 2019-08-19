@@ -379,4 +379,7 @@ footer .social a:hover{
     hr.container{
         margin: 10px auto;
     }
+    article .info .content .button{
+        bottom: -10px;
+    }
 }
