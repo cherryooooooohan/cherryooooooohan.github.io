@@ -50,7 +50,12 @@
                                 <option value="3">磁鐵</option>
                             </select>
                         </p>
-                        <p>數量：<input type="number"></p>  
+                        <p>
+                            數量：
+                            <input type="button" value="-" id="minus">
+                            <input type="text" value="1" id="count">
+                            <input type="button" value="+" id="plus">
+                        </p>  
                     </div>
                     <div class="button">
                         <a href="#">加入購物車</a>
@@ -98,6 +103,14 @@
         $('.hbg').click(function(){
             $('header nav').slideToggle(600);
             $(this).toggleClass('open');
+        });
+        $('#minus').click(function(){
+            if($('#count').val() > 0){
+                $('#count').val(+$('#count').val() - 1);
+            }
+        });
+        $('#plus').click(function(){
+            $('#count').val(+$('#count').val() + 1);
         });
     });
 </script>

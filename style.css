@@ -179,6 +179,18 @@ article .info .content .price{
 article .info .content input{
     width: 60px;
     padding: 5px;
+    text-align: center;
+}
+article .info .content input[type="button"]{
+    background-color: rgba(199, 174, 82, 0.3);
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+article .info .content input[type="button"]:hover{
+    transition-duration: .3s;
+    filter: brightness(0.8);
 }
 article .info .content .button{
     width: calc(100% - 20px);
@@ -195,7 +207,7 @@ article .info .content .button a{
 }
 article .info .content .button a:hover{
     transition-duration: .3s;
-    filter: brightness(1.1);
+    filter: brightness(0.8);
 }
 article .info .content .button a:nth-child(1){
     background-color: #c7ae52;
