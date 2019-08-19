@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LAVIDA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>
+                <a href="index.html"><img src="img/logo.png"></a>
+            </h1>
+        </div>
+        <!-- <nav class="container"> -->
+        <nav>
+            <a href="#">熱門商品</a>
+            <a href="#">耳環</a>
+            <a href="#">項鍊</a>
+            <a href="#">手鍊</a>
+            <a href="#">戒指</a>
+        </nav>
+    </header>
+
+    <!-- hbg -->
+    <div class="hbg">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <article>
+        <div class="container">
+            <div class="info">
+                <div class="content">
+                    <img src="img/hot1.jpg" class="pic">
+                </div>
+                <div class="content">
+                    <div class="info_detail">
+                      <h2 class="pd_title">Cherry 獨家限定耳環</h2>
+                        <p class="price">$790</p>
+                        <p>耳環類型：
+                            <select>
+                                <option value="1">夾式</option>
+                                <option value="2">耳針</option>
+                                <option value="3">磁鐵</option>
+                            </select>
+                        </p>
+                        <p>數量：<input type="number"></p>  
+                    </div>
+                    <div class="button">
+                        <a href="#">加入購物車</a>
+                        <a href="#">直接購買</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr class="container">
+
+    <article class="detail">
+        <div class="container">
+        <h2>商品介紹</h2>
+            <img src="img/hot1.jpg">
+            <img src="img/hot2.jpg">
+            <img src="img/hot3.jpg">
+            <img src="img/hot4.jpg">
+        </div>
+    </article>
+
+    <footer>
+        <p>歡迎加入我們</p>
+        <div class="social">
+            <a href="#">
+                <img src="img/fb.png">
+            </a>
+            <a href="#">
+                <img src="img/ig.png">
+            </a>
+            <a href="#">
+                <img src="img/twitter.png">
+            </a>
+        </div>
+
+        <p>facebook ｜ AVITA</p>
+        <p>instagram ｜ avita.jewelry</p>
+        <p>twitter ｜ AVITA</p>
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function(){
+        $('.hbg').click(function(){
+            $('header nav').slideToggle(600);
+            $(this).toggleClass('open');
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LAVIDA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>
+                <a href="index.html"><img src="img/logo.png"></a>
+            </h1>
+        </div>
+        <!-- <nav class="container"> -->
+        <nav>
+            <a href="#">熱門商品</a>
+            <a href="#">耳環</a>
+            <a href="#">項鍊</a>
+            <a href="#">手鍊</a>
+            <a href="#">戒指</a>
+        </nav>
+    </header>
+
+    <!-- hbg -->
+    <div class="hbg">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="banner container">
+        <img src="img/banner.jpg">
+    </div>
+
+    <!-- 熱門商品 -->
+    <article>
+        <div class="container">
+            <h2>熱門商品</h2>
+            <div class="product">
+                <a href="product.html">
+                    <img src="img/hot1.jpg">
+                    <p>Cherry 獨家限定耳環</p>
+                    <p class="price">$790</p>
+                </a>
+                <a href="product.html">
+                    <img src="img/hot2.jpg">
+                    <p>Cherry 獨家限定手鍊</p>
+                    <p class="price">$790</p>
+                </a>
+                <a href="product.html">
+                    <img src="img/hot3.jpg">
+                    <p>Cherry 簡約耳環戒指組</p>
+                    <p class="price">$790</p>
+                </a>
+                <a href="product.html">
+                    <img src="img/hot4.jpg">
+                    <p>Cherry 貝殼造型耳環</p>
+                    <p class="price">$790</p>
+                </a>
+            </div>
+        </div>
+    </article>
+   
+    <!-- 商品分類 -->
+    <!-- <article>
+        <div class="container">
+            <h2>商品分類</h2>
+            <div class="product">
+                <a href="product.html">
+                    <p>耳環</p>
+                    <img src="img/hot1.jpg">
+                </a>
+                <a href="product.html">
+                    <p>項鍊</p>
+                    <img src="img/hot2.jpg">
+                </a>
+                <a href="product.html">
+                    <p>手鍊</p>
+                    <img src="img/hot3.jpg">
+                </a>
+                <a href="product.html">
+                    <p>戒指</p>
+                    <img src="img/hot4.jpg">
+                </a>
+            </div>
+        </div>
+    </article> -->
+    <article>
+        <div class="container">
+            <h2>商品分類</h2>
+
+            <div class="type">
+                <div class="content">
+                    <div class="title">耳環</div>
+                </div>
+                <div class="content">
+                    <a href="product.html" class="product">
+                        <img src="img/hot4.jpg">
+                    </a>
+                    <a href="product.html" class="product">
+                        <img src="img/hot3.jpg">
+                    </a>
+                </div>
+                <a href="#" class="content more">
+                    更多
+                </a>
+            </div>
+
+            <div class="type">
+                <div class="content">
+                    <div class="title">項鍊</div>
+                </div>
+                <div class="content">
+                    <a href="product.html" class="product">
+                        <img src="img/hot2.jpg">
+                    </a>
+                    <a href="product.html" class="product">
+                        <img src="img/hot1.jpg">
+                    </a>
+                </div>
+                <a href="#" class="content more">
+                    更多
+                </a>
+            </div>
+
+            <div class="type">
+                <div class="content">
+                    <div class="title">手鍊</div>
+                </div>
+                <div class="content">
+                    <a href="product.html" class="product">
+                        <img src="img/hot3.jpg">
+                    </a>
+                    <a href="product.html" class="product">
+                        <img src="img/hot2.jpg">
+                    </a>
+                </div>
+                <a href="#" class="content more">
+                    更多
+                </a>
+            </div>
+
+            <div class="type">
+                <div class="content">
+                    <div class="title">戒指</div>
+                </div>
+                <div class="content">
+                    <a href="product.html" class="product">
+                        <img src="img/hot1.jpg">
+                    </a>
+                    <a href="product.html" class="product">
+                        <img src="img/hot4.jpg">
+                    </a>
+                </div>
+                <a href="#" class="content more">
+                    更多
+                </a>
+            </div>
+        </div>
+        
+    </article>
+
+
+    <footer>
+        <p>歡迎加入我們</p>
+        <div class="social">
+            <a href="#">
+                <img src="img/fb.png">
+            </a>
+            <a href="#">
+                <img src="img/ig.png">
+            </a>
+            <a href="#">
+                <img src="img/twitter.png">
+            </a>
+        </div>
+
+        <p>facebook ｜ AVITA</p>
+        <p>instagram ｜ avita.jewelry</p>
+        <p>twitter ｜ AVITA</p>
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function(){
+        $('.hbg').click(function(){
+            $('header nav').slideToggle(600);
+            $(this).toggleClass('open');
+        });
+    });
+</script>
+
+</html>
