@@ -23,6 +23,9 @@ a{
 img{
     width: 100%;
 }
+input[type="button"]{
+    -webkit-appearance: none;
+}
 .container{
     width: 80%;
     margin: auto;
@@ -182,11 +185,13 @@ article .info .content input{
     text-align: center;
 }
 article .info .content input[type="button"]{
-    background-color: rgba(199, 174, 82, 0.3);
+    background-color: #c7ae52;
+    color: #fff;
     border: none;
     width: 30px;
     height: 30px;
     cursor: pointer;
+    border-radius: 0;
 }
 article .info .content input[type="button"]:hover{
     transition-duration: .3s;
