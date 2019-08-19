@@ -159,6 +159,7 @@ article .info .content{
 }
 article .info .content:nth-last-child(1){
     flex: 3;
+    padding-bottom: 100px;
 }
 article .info .content .info_detail{
     padding: 0 5px;
@@ -380,6 +381,6 @@ footer .social a:hover{
         margin: 10px auto;
     }
     article .info .content .button{
-        bottom: -10px;
+        
     }
 }
